@@ -5,7 +5,6 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -13,7 +12,7 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        SellerDao sellerDao = DaoFactory.creaSellerDao();
+        SellerDao sellerDao = DaoFactory.createSellerDao();
 
         System.out.println("\n===teste numero 01===");
         Seller seller = sellerDao.findById(3);
